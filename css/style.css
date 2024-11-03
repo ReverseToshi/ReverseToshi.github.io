@@ -1,0 +1,43 @@
+body{
+    font-family:'Delius', cursive;
+    border:0;
+    padding: 0;
+    margin:1px;
+    background-color: lavender;
+    font-size:larger;
+}
+.navigation-ribbon {
+    background-color: black; /* Ribbon color */
+    position: fixed; /* Fixed position at the top */
+    width: 100%; /* Full width */
+    top: 0; /* Align to the top */
+    z-index: 1000; /* Above other elements */
+}
+
+.navigation-ribbon ul {
+    list-style: none; /* Remove default list styles */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+    display: flex; /* Flex layout for horizontal navigation */
+    justify-content: center; /* Center items */
+}
+
+.navigation-ribbon li {
+    margin: 0 15px; /* Space between items */
+}
+
+.navigation-ribbon li a {
+    display: block; /* Make the anchor a block element */
+    color: white; /* Text color */
+    text-decoration: none; /* Remove underline */
+    padding-left:20dvb; /* Padding around links */
+    padding-right:20dvb;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    height: 100%; /* Ensure the link fills the li height */
+    width: 100%; /* Ensure the link fills the li width */
+    box-sizing: border-box; /* Include padding in the total width/height */
+    transition: background-color 0.3s; /* Smooth background transition */
+}
+
+
