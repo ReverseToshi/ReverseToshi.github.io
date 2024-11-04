@@ -1,17 +1,48 @@
+/* Reset for html and body to remove default spacing */
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevents horizontal overflow */
+    box-sizing: border-box;
+    height: 100%;
+    font-family: 'Delius', cursive;
+    font-size: larger;
+}
+
+/* Main background section with full viewport coverage */
+.home {
+    background: url(../assets/images/bg.png) no-repeat center center;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    width: 100vw; /* Full viewport width */
+    height: 100vh; /* Full viewport height */
+}
+
 body{
     font-family:'Delius', cursive;
     border:0;
     padding: 0;
-    margin:1px;
-    background: -webkit-linear-gradient(135deg, hsla(0, 100%, 35%, 1) 0%, hsla(285, 80%, 38%, 1) 100%);
+    margin:0;
+    box-sizing: border-box;
+    /* background: -webkit-linear-gradient(135deg, hsla(0, 100%, 35%, 1) 0%, hsla(285, 80%, 38%, 1) 100%); */
     font-size:larger;
+    background: url(../assets/images/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0px;
+    padding:0px;
+    height:100%;
+    width:100%;
 }
 .navigation-ribbon {
     background-color: black; 
     position: fixed;
-    width: 100%; 
+    margin-left: 5%;
+    width: 90%; 
     top: 5px; 
     z-index: 1000; 
+    border-radius: 20px; 
 }
 
 .navigation-ribbon ul {
@@ -19,13 +50,16 @@ body{
     padding: 0; 
     margin: 0; 
     display: flex; 
+    flex-grow:1;
     justify-content: center;
     align-items:center;
+    
 }
 
 .navigation-ribbon li {
     margin: 0; 
     width: 100%;
+    border-radius: 20px;
 }
 
 .navigation-ribbon li a {
@@ -38,8 +72,38 @@ body{
     height: 100%;
     width: 100%; 
     transition: background-color 0.3s;
+    border-radius: 20px;
 }
 .navigation-ribbon li a:hover{
-    background-color: gray;
+    background-color: rgb(37, 46, 46);
+}
+.about-me {
+    display: block;
+    margin: 70px 20% 0 20%; /* Avoids setting top/left/right individually */
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 5px 0 5px 5%;
 }
 
+.h{
+    color: lavender;
+}
+
+/* About-me section styling */
+.about-me {
+    display: block;
+    margin: 70px 20% 0 20%; /* Centered with side margins */
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 5px 0 5px 5%;
+}
+
+/* Header text color */
+.h {
+    color: lavender;
+}
+
+/* Global box-sizing for consistent element sizing */
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
