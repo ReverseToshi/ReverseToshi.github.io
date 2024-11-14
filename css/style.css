@@ -91,7 +91,7 @@ body{
 /* About-me section styling */
 .about-me {
     display: block;
-    margin: 70px 20% 0 20%; /* Centered with side margins */
+    margin: 90px 20% 0 20%; /* Centered with side margins */
     background-color: rgba(0, 0, 0, 0.7);
     padding: 5px 0 5px 5%;
 }
@@ -106,4 +106,31 @@ body{
 *::before,
 *::after {
     box-sizing: inherit;
+}
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: red;
+    color: white;
+}
+.socials{
+    display: flex;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: auto;
+}
+.socials li{
+    margin:1px 15px;
+    list-style: none;
+}
+.socials li a{
+    text-decoration: none;
+    color:white;
+    padding:0% 2%;
+}
+.linkedin{
+    height:10px;
+    width: 10px;
 }
