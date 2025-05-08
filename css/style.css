@@ -1,136 +1,89 @@
-/* Reset for html and body to remove default spacing */
-html, body {
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden; /* Prevents horizontal overflow */
-    box-sizing: border-box;
-    height: 100%;
-    font-family: 'Delius', cursive;
-    font-size: larger;
+:root {
+    --spotify-green: rgb(29, 185, 84);
+    --spotify-dark-green: rgb(30, 215, 96);
+    --spotify-black: rgb(25, 20, 20);
+    --spotify-white: rgb(255, 255, 255);
+    --spotify-light-gray: rgb(248, 248, 248);
+    --spotify-medium-gray: rgb(83, 83, 83);
 }
-
-/* Main background section with full viewport coverage */
-.home {
-    background: url(../assets/images/bg.png) no-repeat center center;
-    background-size: cover;
-    margin: 0;
-    padding: 0;
-    width: 100vw; /* Full viewport width */
-    height: 100vh; /* Full viewport height */
-}
-
 body{
-    font-family:'Delius', cursive;
+    font-family: 'Delius';
     border:0;
-    padding: 0;
+    padding:0;
     margin:0;
-    box-sizing: border-box;
-    /* background: -webkit-linear-gradient(135deg, hsla(0, 100%, 35%, 1) 0%, hsla(285, 80%, 38%, 1) 100%); */
-    font-size:larger;
-    background: url(../assets/images/bg.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: 0px;
-    padding:0px;
-    height:100%;
-    width:100%;
 }
+
 .navigation-ribbon {
-    background-color: black; 
-    position: fixed;
-    margin-left: 5%;
-    width: 90%; 
-    top: 5px; 
-    z-index: 1000; 
-    border-radius: 20px; 
+    list-style: none;
+    padding: 0; /* Remove any padding from the parent */
+    display: flex;
+    justify-content: space-between; /* Space between title and links */
+    background-color: var(--spotify-black);
+    color: var(--spotify-white);
+    font-size: large;
+    align-items: center; /* Center items vertically */
+    width: 100%; /* Ensure it stretches to full width */
+}
+
+.navigation-ribbon h1 {
+    padding-left: 3%;
+    padding-top:1%;
+    padding-bottom:0.7%;
+    margin: 0; /* Remove margin from h1 */
+    display: inline-block; /* Make sure h1 stays in line */
 }
 
 .navigation-ribbon ul {
-    list-style: none; 
-    padding: 0; 
-    margin: 0; 
-    display: flex; 
-    flex-grow:1;
-    justify-content: center;
-    align-items:center;
-    
+    display: flex; /* Ensure list items are on one line */
+    margin: 0; /* Remove margin from ul */
+    padding: 0; /* Remove padding */
+    justify-content: flex-end; /* Align list items to the right */
 }
 
 .navigation-ribbon li {
-    margin: 0; 
-    width: 100%;
-    border-radius: 20px;
+    display: inline-block; /* Keep items inline */
+    padding: 10px;
+    margin: 0 10px; /* Space between items */
 }
 
-.navigation-ribbon li a {
-    display: block; 
-    color: white; 
-    text-decoration: none;
-    text-align: center;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    height: 100%;
-    width: 100%; 
-    transition: background-color 0.3s;
-    border-radius: 20px;
-}
-.navigation-ribbon li a:hover{
-    background-color: rgb(37, 46, 46);
-}
-.about-me {
-    display: block;
-    margin: 70px 20% 0 20%; /* Avoids setting top/left/right individually */
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 5px 0 5px 5%;
+.navigation-ribbon a {
+    color: var(--spotify-white);
+    text-decoration: none; /* Remove underline from links */
 }
 
-.h{
-    color: lavender;
+.navigation-ribbon a:hover {
+    color: var(--spotify-green);
 }
 
-/* About-me section styling */
-.about-me {
-    display: block;
-    margin: 90px 20% 0 20%; /* Centered with side margins */
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 5px 0 5px 5%;
+#Panel{
+    display:flex;
 }
-
-/* Header text color */
-.h {
-    color: lavender;
+#Projects{
+    background-color: var(--spotify-black);
+    color: var(--spotify-white);
+    padding: 1%;
+    margin: 0;
+    border:1px;
+    border-color: var(--spotify-medium-gray);
+    border-style: solid;
+    width: 10%;
+    min-height: 100vh;
 }
-
-/* Global box-sizing for consistent element sizing */
-*,
-*::before,
-*::after {
-    box-sizing: inherit;
-}
-footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: red;
-    color: white;
-}
-.socials{
-    display: flex;
-    flex-grow: 1;
-    flex-shrink: 0;
-    flex-basis: auto;
-}
-.socials li{
-    margin:1px 15px;
+#Projects ul{
+    padding: 1%;
+    margin: 0;
     list-style: none;
 }
-.socials li a{
-    text-decoration: none;
-    color:white;
-    padding:0% 2%;
+#Projects li{
+    color: var(--spotify-white);
+    font-size: 1em;
+    padding-left: 1%;
+    padding:5px;
 }
-.linkedin{
-    height:10px;
-    width: 10px;
+
+.Project{
+    background-color: var(--spotify-black);
+    color: var(--spotify-white);
+    width: 100%;
+    border: 1px solid var(--spotify-medium-gray);
 }
