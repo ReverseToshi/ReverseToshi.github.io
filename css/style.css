@@ -1,6 +1,6 @@
 :root {
     --spotify-green: rgb(29, 185, 84);
-    --spotify-dark-green: rgb(30, 215, 96);
+    --spotify-dark-green: rgb(30, 153, 70);
     --spotify-black: rgb(25, 20, 20);
     --spotify-white: rgb(255, 255, 255);
     --spotify-light-gray: rgb(248, 248, 248);
@@ -11,6 +11,7 @@ body{
     border:0;
     padding:0;
     margin:0;
+    background-color: var(--spotify-medium-gray);
 }
 
 .navigation-ribbon {
@@ -22,7 +23,9 @@ body{
     color: var(--spotify-white);
     font-size: large;
     align-items: center; /* Center items vertically */
-    width: 100%; /* Ensure it stretches to full width */
+    width: 99.80%; /* Ensure it stretches to full width */
+    border:2px solid var(--spotify-medium-gray);
+    border-radius: 10px;
 }
 
 .navigation-ribbon h1 {
@@ -43,7 +46,7 @@ body{
 .navigation-ribbon li {
     display: inline-block; /* Keep items inline */
     padding: 10px;
-    margin: 0 10px; /* Space between items */
+    margin: 0 5px; /* Space between items */
 }
 
 .navigation-ribbon a {
@@ -51,12 +54,24 @@ body{
     text-decoration: none; /* Remove underline from links */
 }
 
-.navigation-ribbon a:hover {
-    color: var(--spotify-green);
+button{
+    background-color: var(--spotify-dark-green);
+    color: var(--spotify-white);
+    border: 1px solid var(--spotify-medium-gray);
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 100px;
+    cursor: pointer;
 }
-
 #Panel{
     display:flex;
+}
+.dashboard{
+    display:flex;
+    background: linear-gradient(to bottom, var(--spotify-black), var(--spotify-dark-green));
+    border:1px;
+    border-radius: 10px;
+    height: max-content;
 }
 #Projects{
     background-color: var(--spotify-black);
@@ -66,8 +81,9 @@ body{
     border:1px;
     border-color: var(--spotify-medium-gray);
     border-style: solid;
+    border-radius: 15px;
     width: 10%;
-    min-height: 100vh;
+    min-height: 80vh;
 }
 #Projects ul{
     padding: 1%;
@@ -80,10 +96,43 @@ body{
     padding-left: 1%;
     padding:5px;
 }
+#Projects a{
+    color: var(--spotify-white);
+    text-decoration: none;
+}
+#Projects a:hover{
+    color: var(--spotify-green);
+}
 
 .Project{
     background-color: var(--spotify-black);
     color: var(--spotify-white);
     width: 100%;
     border: 1px solid var(--spotify-medium-gray);
+    border-radius: 10px;
 }
+footer {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    height: 80px; /* fixed height */
+    background-color: #111; /* optional */
+    border:2px solid;
+    border-radius: 10px;
+}
+
+footer .socials {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+}
+
+footer .socials li img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    display: block;
+}  
+  

@@ -19,5 +19,12 @@
         "technologies": ["Cedar Logic", "C++"],
         "repository": "https://github.com/ReverseToshi/Motorola-68k",
         "liveDemo": "https://ReverseToshi.github.io/weather-app"
+    },
+    {
+        "name": "Hotel Management System",
+        "description": "A hotel management system that allows user to manage hotel bookings and reservations.\nIt is a simple tool that can be used to manage hotel bookings.",
+        "technologies": ["Python", "sqlite3", "tkinter"],
+        "repository": "https://github.com/ReverseToshi/HackNotts24",
+        "liveDemo": "https://ReverseToshi.github.io/portfolio-website"
     }
 ]
