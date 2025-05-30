@@ -11,7 +11,10 @@
 </head>
 <body>
     <nav class="navigation-ribbon">
-        <h1>Dwij Shah/Dashboard</h1>
+        <div id="first-row">
+            <h1>Dashboard</h1>
+            <button id="toggle-nav">☰</button>
+        </div>
         <ul>
             <li><a href="index.html"><button>Home</button></a></li>
             <li><a href="projects.html"><button>All Projects</button></a></li>
@@ -21,17 +24,26 @@
         </ul>
     </nav>
     <div class="dashboard">
-        <div id="Projects">
-            <h3>Projects</h3>
-            <ul id = "projects-list"></ul>
-            <script src="./js/project_panel.js"></script>
+        <div class="projects">
+            <button id="toggle-projects">☰</button>
+            <div id="Projects">
+                <h3>Projects</h3>
+                <ul id = "projects-list"></ul>
+            </div>
+        </div>
+        <div class="Data">
+            <h2>Hi, I'm Dwij Shah!</h2>
+            <p>I am a second year Computer Science Artificial Intelligence Honours student at Nottingham Trent University</p>
+            <p>Feel free to browse through my projects and learn more about my work and experience.</p>
         </div>
     </div>
+    <script type="module" src="./js/index.js"></script>
 </body>
 <footer>
     <ul class="socials">
-       <li><a href="https://linkedin.com/in/dwij-shah-325049298"><img src="./assets/images/linkedin.png" alt="Linkedin Profile"></img></a></li>
-       <li><a href="mailto:dwijshah2257@outlook.com"><img src="./assets/images/email.png" alt="Email"></img></a></li>
+       <li><a href="https://linkedin.com/in/dwij-shah-325049298/"><img id="linkedin" src="./assets/images/linkedin.png" alt="Linkedin Profile"></a></li>
+       <li><a href="mailto:dwijshah2257@outlook.com"><img id="email" src="./assets/images/email.png" alt="Email"></img></a></li>
+       <li><a href="https://github.com/reversetoshi/"><img id="github" src="/assets/images/github-mark-white.png" alt="Github"></a></li>
     </ul>
 </footer>
 </html>

@@ -13,6 +13,9 @@ body{
     margin:0;
     background-color: var(--spotify-medium-gray);
 }
+#toggle-nav{
+    display: none;
+}
 
 .navigation-ribbon {
     list-style: none;
@@ -71,7 +74,7 @@ button{
     background: linear-gradient(to bottom, var(--spotify-black), var(--spotify-dark-green));
     border:1px;
     border-radius: 10px;
-    height: max-content;
+    min-height: 84vh;
 }
 #Projects{
     background-color: var(--spotify-black);
@@ -82,8 +85,8 @@ button{
     border-color: var(--spotify-medium-gray);
     border-style: solid;
     border-radius: 15px;
-    width: 10%;
-    min-height: 80vh;
+    width: fit-content;
+    height:99%;
 }
 #Projects ul{
     padding: 1%;
@@ -102,6 +105,25 @@ button{
 }
 #Projects a:hover{
     color: var(--spotify-green);
+}
+#toggle-projects{
+    display: none;
+}
+.Data{
+    color:var(--spotify-white);
+    padding:10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.Data h2{
+    font-size:xx-large;
+    padding: 20px;
+}
+
+.Data p{
+    font-size:large;
+    padding-left: 20px;
 }
 
 .Project{
@@ -128,11 +150,100 @@ footer .socials {
     display: flex;
     gap: 10px;
 }
+footer .socials li{
+    align-self: center;
+    padding:0;
+    margin: 0;
+}
 
-footer .socials li img {
-    width: 60px;
-    height: 60px;
-    object-fit: contain;
-    display: block;
-}  
-  
+footer .socials li #github{
+    max-width: 40px;
+    padding-right: 3px;
+}
+footer .socials li #email{
+    max-width: 70px;
+    padding:0;
+}
+footer .socials li #linkedin{
+    max-width: 60px;
+    padding:0;
+}
+
+@media screen and (max-width: 840px) {
+    .navigation-ribbon {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items */
+    }
+    #first-row{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    .navigation-ribbon ul {
+        display: none;
+        flex-direction: row; /* Stack list items vertically */
+        align-items: center; /* Center items */
+        flex-wrap: wrap; /* Allow wrapping */;
+    }
+    .navigation-ribbon ul.active{
+        display: flex; /* Show active item */
+    }
+    .navigation-ribbon button{
+        background-color: var(--spotify-dark-green);
+        color: var(--spotify-white);
+        border: 1px solid var(--spotify-medium-gray);
+        padding: 10px 20px;
+        font-size: 10px;
+        border-radius: 100px;
+        cursor: pointer;
+    }
+    #toggle-nav{
+        display: flex;
+        background-color: var(--spotify-dark-green);
+        color: var(--spotify-white);
+        border: none;
+        padding: 10px;
+        font-size: 12px;
+        margin: 10px;
+        border-radius: 50px;
+        cursor: pointer;
+    }
+    .projects{
+        display: flex;
+        flex-direction: column;
+        width: 97%;
+    }
+    .dashboard{
+        display: flex;
+        flex-direction: column;
+        background: linear-gradient(to bottom, var(--spotify-black), var(--spotify-dark-green));
+        border:1px;
+        border-radius: 10px;
+        min-height: 82vh;
+    }
+    #toggle-projects {
+        display: inline;
+        width:fit-content;
+        background-color: var(--spotify-dark-green);
+        color: var(--spotify-white);
+        border: none;
+        padding: 5px;
+        font-size: 12px;
+        margin: 5px;
+        border-radius: 50px;
+        cursor: pointer;
+        max-height: 50px;
+    }
+    #Projects {
+        display: none;
+        /* position: absolute; */
+        width: 100%;
+        height:fit-content
+    }
+    
+    #Projects.active {
+        display: block;;
+    }
+}
