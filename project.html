@@ -11,7 +11,10 @@
 </head>
 <body>
     <nav class="navigation-ribbon">
-        <h1>Dwij Shah/Dashboard</h1>
+        <div id="first-row">
+            <h1>Dashboard</h1>
+            <button id="toggle-nav">☰</button>
+        </div>
         <ul>
             <li><a href="index.html"><button>Home</button></a></li>
             <li><a href="projects.html"><button>All Projects</button></a></li>
@@ -20,20 +23,28 @@
             <li><a href="contact.html"><button>Contact</button></a></li>
         </ul>
     </nav>
-    <nav id="Panel">
-        <div id="Projects">
-            <h3>Projects</h3>
-            <ul id = "projects-list"></ul>
+    <nav class="dashboard">
+        <div class="projects">
+            <button id="toggle-projects">☰</button>
+            <div id="Projects">
+                <h3>Projects</h3>
+                <ul id="projects-list"></ul>
+            </div>
         </div>
-        <div class="Project">
+        <div class="Data">
+            <h2 id="project-header"></h2>
             <p id="project-description"></p>
+            <img id="project-img" alt="Highlight image">
+            <a id="repo-link"></a>
         </div>
     </nav>
     <script type="module" src="./js/project.js"></script>
 </body>
 <footer>
     <ul class="socials">
-       
+       <li><a href="https://linkedin.com/in/dwij-shah-325049298/"><img id="linkedin" src="./assets/images/linkedin.png" alt="Linkedin Profile"></a></li>
+       <li><a href="mailto:dwijshah2257@outlook.com"><img id="email" src="./assets/images/email.png" alt="Email"></img></a></li>
+       <li><a href="https://github.com/reversetoshi/"><img id="github" src="/assets/images/github-mark-white.png" alt="Github"></a></li>
     </ul>
 </footer>
 </html>

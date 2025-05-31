@@ -9,12 +9,17 @@ export function load_projects(){
       console.log(project);
       if (project) {
         const title = document.getElementById('project-title');
+        const header = document.getElementById('project-header');
         const description = document.getElementById('project-description');
-      //   const image = document.getElementById('project-image');
-
+        const image = document.getElementById('project-img');
+        const repo = document.getElementById('repo-link');
+        repo.href = project.repository;
+        repo.target = "_blank";
+        repo.textContent = "Github Repository";
         title.textContent = project.name;
+        header.textContent = project.name;
         description.textContent = project.description;
-      //   image.src = project.image;
+        image.src = project.highlight;
       } else {
         console.error('Project not found');
       }
