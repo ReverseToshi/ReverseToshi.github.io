@@ -211,7 +211,7 @@ footer .socials img{
 }
 
 
-@media screen and (max-width: 840px) {
+@media screen and (max-width: 1120px) {
     .navigation-ribbon {
         flex-direction: column; /* Stack items vertically */
         align-items: center; /* Center items */
