@@ -1,0 +1,159 @@
+:root{
+    --footer: #023268;
+    --primary: #568ea6;
+    --secondary: #305f72;
+    --text: #0f0f0f;
+    --button-1:#1b2fe2;
+    --button-2:#a51087;
+}
+body{
+    background-color: var(--primary);
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: var(--text);
+    margin: 0;
+}
+#navigation-ribbon {
+    display: flex;
+    justify-content: space-between; /* space between logo and nav items */
+    align-items: center;
+    background-color: var(--secondary);
+    padding-left: 13rem;
+    padding-right: 13rem;
+    font-size: large;
+    flex-wrap: wrap; /* optional if you want it responsive */
+}
+button{
+    cursor: pointer;
+    padding: 1rem;
+    font-size: 1rem;
+    border-radius: 10px;
+}
+.button-1{
+    background-color: var(--button-1);
+}
+.button-2{
+    background-color: var(--button-2);
+}
+a{
+    color: var(--text);
+    text-decoration: none;
+    cursor: pointer;
+}
+li{
+    list-style: none;
+}
+#first-row {
+    display: flex;
+    align-items: center;
+    gap: 2rem; /* spacing between name and button */
+}
+#toggle-nav{
+    display: none;
+}
+#navigation-ribbon li {
+    display: flex;
+    justify-content:right;
+}
+#second-row {
+    display: flex;
+    gap: 3rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+button img{
+    height: 1rem;
+}
+#About{
+    padding-left: 13rem;
+    padding-right: 13rem;
+    font-size: x-large;
+}
+.dashboard h2{
+    font-size: 4rem;
+    display: block;
+}
+#about-content{
+    display: flex;
+}
+#dashboard-text p{
+    width: 90%;
+}
+#pfp{
+    width: 500px;
+    border-radius: 500px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+#Education{
+    background-color: var(--secondary);
+    padding-left: 13rem;
+    padding-right: 13rem;
+}
+.content{
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.header{
+    justify-items: center;
+}
+.content ul{
+    display: flex;
+}
+.content h1{
+    font-size: 2rem;
+}
+.content ul li{
+    margin: 5%;
+    padding:2%;
+    background-color: var(--primary);
+    color: black;
+    border-radius: 50px;
+    border:2px solid black;
+}
+#Projects{
+    padding-left: 13rem;
+    padding-right: 13rem;
+}
+#highlights{
+    display: flex;
+}
+#highlights li{
+    width: 800px;
+    padding: 2%;
+    background-color: var(--secondary);
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-top: 5%;
+    border-radius: 50px;
+}
+#highlights h1{
+    justify-self: center;
+}
+.content h1{
+    justify-self: right;
+}
+li img{
+    max-width: 100%;
+}
+
+#Skills{
+    background-color: var(--secondary);
+    margin-bottom: 0;
+}
+footer{
+    margin: 0;
+    padding: 0;
+}
+#Contact{
+    background-color: var(--footer);
+    display: flex;
+    justify-content: right;
+    margin: 0;
+}
+#Contact li{
+    padding: 2%;
+}
+#Contact li img{
+    height:50px;
+}

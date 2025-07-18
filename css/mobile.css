@@ -1,0 +1,25 @@
+:root{
+    --footer: #023268;
+    --primary: #568ea6;
+    --secondary: #305f72;
+    --text: #0f0f0f;
+    --button-1:#1b2fe2;
+    --button-2:#a51087;
+}
+@media screen and (max-width: 768px) {
+    #toggle-nav{
+        display: flex;
+        justify-content: flex-end;
+    }
+    #second-row{
+        display: none;
+    }
+    #second-row.active{
+        display:block;
+        padding-right: 5%;
+    }
+    #navigation-ribbon{
+        display: block;
+        padding: 0;
+    }
+}
