@@ -1,10 +1,8 @@
-export function highlight_projects(){
-    fetch("./assets/jsons/projects.json")
-        .then(response=>response.json())
-        .then(data => {
-            const topThree = data.slice(0,3);
-            const list = document.getElementById("highlights");
-            topThree.forEach(item=>{
+function load_projects(){
+    fetch("./assets/jsons/projects.json").then(response=>response.json())
+        .then(data=>{
+            const list = document.getElementById(`highlights`);
+            data.forEach((item)=>{
                 const ref = document.createElement('a');
                 const element = document.createElement('li');
                 const img = document.createElement('img');
@@ -27,7 +25,8 @@ export function highlight_projects(){
                 element.appendChild(description);
                 element.appendChild(ref);
                 list.appendChild(element);
-            });
+            })
         })
-        .catch(error => console.error('Error loading JSON:', error));
-}
+};
+
+load_projects();

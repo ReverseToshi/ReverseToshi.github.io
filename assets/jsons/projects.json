@@ -12,7 +12,7 @@
         "description": "A hotel management system that allows user to manage hotel bookings and reservations.\nIt is a simple tool that can be used to manage hotel bookings.",
         "technologies": ["Python", "sqlite3", "tkinter"],
         "highlight":"./assets/images/hotel.png",
-        "repository": "https://github.com/ReverseToshi/HackNotts24",
+        "repository": "https://github.com/ReverseToshi/Hotel-Management",
         "liveDemo": "https://ReverseToshi.github.io/portfolio-website"
     },
     {
@@ -22,13 +22,5 @@
         "highlight":"./assets/images/CPU.png",
         "repository": "https://github.com/ReverseToshi/Motorola-68k",
         "liveDemo": "https://ReverseToshi.github.io/weather-app"
-    },
-    {
-        "name": "Graphing tool",
-        "description": "A c++ program that allows user to graph functions and equations.\nIt is a simple tool that can be used to visualize mathematical functions.",
-        "technologies": ["C++", "wxWidgets"],
-        "highlight":"./assets/images/cREDIT.png",
-        "repository": "https://github.com/ReverseToshi/Graphing-tool",
-        "liveDemo": "https://ReverseToshi.github.io/task-manager"
     }
 ]

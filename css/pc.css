@@ -27,6 +27,7 @@ button{
     padding: 1rem;
     font-size: 1rem;
     border-radius: 10px;
+    border-color: black;
 }
 .button-1{
     background-color: var(--button-1);
@@ -115,17 +116,18 @@ button img{
     padding-left: 13rem;
     padding-right: 13rem;
 }
-#highlights{
-    display: flex;
+#highlights {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  gap: 2rem; /* spacing between items */
+  padding: 2rem;
 }
-#highlights li{
-    width: 800px;
-    padding: 2%;
-    background-color: var(--secondary);
-    margin-left: 3%;
-    margin-right: 3%;
-    margin-top: 5%;
-    border-radius: 50px;
+
+#highlights li {
+  background-color: var(--secondary);
+  padding: 2rem;
+  border-radius: 50px;
+  list-style: none;
 }
 #highlights h1{
     justify-self: center;
@@ -138,8 +140,19 @@ li img{
 }
 
 #Skills{
+    padding-left: 13rem;
+    padding-right: 13rem;
     background-color: var(--secondary);
     margin-bottom: 0;
+}
+
+#Skills .content ul{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+#Skills h3{
+    padding: 5%;
+    justify-self: center;
 }
 footer{
     margin: 0;
@@ -156,4 +169,47 @@ footer{
 }
 #Contact li img{
     height:50px;
+}
+
+@media screen and (max-width: 1597px) {
+    #navigation-ribbon{
+        padding-left: 5%;
+        padding-right:5%;
+    }
+    #About{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .dashboard h2{
+        font-size: 2rem;
+    }
+    .dashboard h1{
+        font-size:larger;
+    }
+    .dashboard h3{
+        font-size: large;
+    }
+    #about-content{
+        display:block;
+    }
+    #dashboard-text p{
+        width: 100%;
+    }
+    #pfp{
+        width: 50%;
+        margin-left:25%;
+    }
+    #Education, #Projects, #Skills{
+        padding-left: 5%;
+        padding-right:5%;
+    }
+    #Skills ul{
+        padding:0;
+    }
+    .skill{
+        text-align: center;
+    }
+    .skill h3{
+        font-size:medium;
+    }
 }

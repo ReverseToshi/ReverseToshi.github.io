@@ -5,49 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/pc.css">
     <link rel="stylesheet" href="./css/mobile.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Delius&display=swap" rel="stylesheet">
-    <title>Portfolio</title>
+    <title>Projects</title>
 </head>
 <body>
-    <nav class="navigation-ribbon">
+    <nav id="navigation-ribbon">
         <div id="first-row">
-            <h1>Dashboard</h1>
-            <button id="toggle-nav">☰</button>
+            <h1>Projects</h1>
         </div>
-        <ul>
-            <li><a href="index.html"><button>Home</button></a></li>
-            <li><a href="projects.html"><button>All Projects</button></a></li>
-            <li><a href="education.html"><button>Education</button></a></li>
-            <li><a href="skills.html"><button>Skills</button></a></li>
-            <li><a href="contact.html"><button>Contact</button></a></li>
-        </ul>
     </nav>
     <div class="dashboard">
-        <div class="projects">
-            <button id="toggle-projects">☰</button>
-            <div id="Projects">
-                <h3>Projects</h3>
-                <ul id = "projects-list"></ul>
-            </div>
-        </div>
-        <div class="Data">
-            <h2>Hi, I'm Dwij Shah</h2>
-            <p>I am a second year Computer Science Artificial Intelligence Honours student at Nottingham Trent University. I like building automated systems and softwares which
-                have practical uses, and I am always eager to learn new technologies and improve my skills.</p>
-            <p>Feel free to browse through my projects and learn more about my work and experience.</p>
-            <a href="./assets/documents/Dwij Shah.pdf" download target="_blank"><button>Download CV</button></a>
-            <h2>Projects</h2>
-            <p>Some highlights of my projects</p>
-            <ul id="highlights"></ul>
+        <div class="Projects">
+            <a href="index.html"><h3>←Home</h3></a>
+            <ul id="highlights">
+
+            </ul>
+            <script src="./js/projects.js"></script>
         </div>
     </div>
-    <script type="module" src="./js/education.js"></script>
+    <footer>
+        <ul id="Contact" class="socials">
+        <li><a href="https://linkedin.com/in/dwij-shah-325049298/"><img id="linkedin" src="./assets/images/linkedin.png" alt="Linkedin Profile"></a></li>
+        <li><a href="mailto:dwijshah2257@outlook.com"><img id="email" src="./assets/images/email.png" alt="Email"></img></a></li>
+        <li><a href="https://github.com/reversetoshi/"><img id="github" src="/assets/images/github-mark-white.png" alt="Github"></a></li>
+        </ul>
+    </footer>
 </body>
-<footer>
-    <ul class="socials">
-       
-    </ul>
-</footer>
+
 </html>

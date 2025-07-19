@@ -6,20 +6,41 @@
     --button-1:#1b2fe2;
     --button-2:#a51087;
 }
-@media screen and (max-width: 768px) {
-    #toggle-nav{
-        display: flex;
-        justify-content: flex-end;
-    }
-    #second-row{
-        display: none;
-    }
-    #second-row.active{
-        display:block;
+@media screen and (max-width: 1000px) {
+    #About{
+        padding-left: 5%;
         padding-right: 5%;
     }
     #navigation-ribbon{
+        display:block;
+    }
+    #toggle-nav{
         display: block;
-        padding: 0;
+    }
+    #first-row{
+        display: flex;
+        justify-content: space-between;
+    }
+    #second-row{
+        display: none;
+        flex-direction: column; /* this won't apply until it's flex */
+        gap: 5%; /* optional: spacing between links */
+        padding:0 2% 2% 2%;
+    }
+    #second-row.active{
+        display: flex;
+        flex-direction: row;
+        justify-self: center;
+    }
+    .content ul{
+        display:block
+    }
+    #highlights{
+        display: block;
+        padding:2%;
+    }
+    #highlights li{
+        max-width: 90%;
+        margin: 5%;
     }
 }
