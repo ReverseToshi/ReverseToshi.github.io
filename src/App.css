@@ -1,0 +1,11 @@
+.App {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex: 1 0 auto;
+    padding: 20px;
+    padding-top: 60px; /* Add space for the fixed navbar */
+}

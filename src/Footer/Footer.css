@@ -1,0 +1,32 @@
+footer {
+    width: 100%;
+    background-color: #0d1b2a;
+    padding: 0.5rem 0;
+    margin-top: auto; /* Push footer to the bottom of content */
+    color:#a8dadc;
+}
+
+a,
+a:visited,
+a:hover,
+a:active {
+  color: #a8dadc; /* example: #00b4d8 */
+  text-decoration: none; /* optional — removes underline */
+}
+
+#footer-content {
+    text-align: center;
+}
+#footer-content p{
+    font-size:x-large;
+    padding: 0.3rem;
+}
+#footer-content ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0.3rem;
+}
+#footer-content ul li{
+    margin: 0 1rem;
+}
