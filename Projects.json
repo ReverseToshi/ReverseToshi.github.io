@@ -1,0 +1,38 @@
+[
+    {
+        "title": "Tavra",
+        "description": "A website for integrating the convenience of Tiktok and connectivity of LinkedIn.",
+        "tech": ["React", "CSS", "Typescript", "MongoDB", "Python", "Flask"],
+        "type": "Web Application",
+        "thumbnail": "./thumbnails/CPU.png",
+        "highlight": true,
+        "url": "https://github.com/0xShay/tavra"
+    },
+    {
+        "title": "cREDIT",
+        "description": "A rpg based in soviet Russia to teach credit literacy",
+        "tech": ["Python", "PyGame", "Figma"],
+        "type": "Desktop Game",
+        "thumbnail": "task-manager-thumbnail.png",
+        "highlight": true,
+        "url": "https://example.com/taskmanager"
+    },
+    {
+        "title": "Hotel Management App",
+        "description": "A simple app to manage hotel booking system.",
+        "tech": ["Python", "TKinter", "SQLite"],
+        "type": "Desktop Application",
+        "thumbnail": "ecommerce-api-thumbnail.png",
+        "highlight": true,
+        "url": "https://example.com/ecommerceapi"
+    },
+    {
+        "title":"",
+        "description":"",
+        "tech":[],
+        "type":"",
+        "thumbnail":"",
+        "highlight":true,
+        "url":""
+    }
+]
