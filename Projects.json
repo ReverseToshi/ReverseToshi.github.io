@@ -4,7 +4,7 @@
         "description": "A website for integrating the convenience of Tiktok and connectivity of LinkedIn.",
         "tech": ["React", "CSS", "Typescript", "MongoDB", "Python", "Flask"],
         "type": "Web Application",
-        "thumbnail": "./thumbnails/CPU.png",
+        "thumbnail": "./thumbnails/tavra.png",
         "highlight": true,
         "url": "https://github.com/0xShay/tavra"
     },
@@ -13,26 +13,26 @@
         "description": "A rpg based in soviet Russia to teach credit literacy",
         "tech": ["Python", "PyGame", "Figma"],
         "type": "Desktop Game",
-        "thumbnail": "task-manager-thumbnail.png",
+        "thumbnail": "./thumbnails/cREDIT.png",
         "highlight": true,
-        "url": "https://example.com/taskmanager"
+        "url": "https://github.com/ReverseToshi/HackNotts24"
     },
     {
         "title": "Hotel Management App",
         "description": "A simple app to manage hotel booking system.",
         "tech": ["Python", "TKinter", "SQLite"],
         "type": "Desktop Application",
-        "thumbnail": "ecommerce-api-thumbnail.png",
+        "thumbnail": "./thumbnails/hotel.png",
         "highlight": true,
-        "url": "https://example.com/ecommerceapi"
+        "url": "https://github.com/ReverseToshi/Hotel-Management"
     },
     {
-        "title":"",
-        "description":"",
-        "tech":[],
-        "type":"",
-        "thumbnail":"",
+        "title":"PennyPal",
+        "description":"A personal finance management app to help users track expenses and manage budgets effectively.",
+        "tech":["Python", "React", "JavaScript", "Flask", "OpenAI", "PostgreSQL"],
+        "type":"Web Application",
+        "thumbnail":"./thumbnails/pennypal.png",
         "highlight":true,
-        "url":""
+        "url":"https://github.com/0xShay/pennypal"
     }
 ]
