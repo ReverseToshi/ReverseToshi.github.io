@@ -34,5 +34,23 @@
         "thumbnail":"./thumbnails/pennypal.png",
         "highlight":true,
         "url":"https://github.com/0xShay/pennypal"
+    },
+    {
+        "title":"Load Balancer",
+        "description":"(NOTE: I haven't migrated it from uni to personal git yet) A load balancer that distributes file upload and download requests across multiple servers to optimize performance and ensure high availability.",
+        "tech":["Java", "Docker", "SQLite", "JavaFX"],
+        "type":"Desktop Application",
+        "thumbnail":"./thumbnails/lb.png",
+        "highlight":true,
+        "url":"https://github.com/ReverseToshi/Cloud-Load-Balancer"
+    },
+    {
+        "title":"Graphing App",
+        "description":"(NOTE: I haven't migrated it from uni to personal git yet) A load balancer that distributes file upload and download requests across multiple servers to optimize performance and ensure high availability.",
+        "tech":["C++", "wxWidgets"],
+        "type":"Desktop Application",
+        "thumbnail":"./thumbnails/Graph.png",
+        "highlight":true,
+        "url":"https://github.com/ReverseToshi/Graphing-App"
     }
 ]
