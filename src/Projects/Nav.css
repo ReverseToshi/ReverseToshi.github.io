@@ -1,0 +1,28 @@
+#nav-bar{
+  display: flex;
+  align-self:center;
+  justify-content: space-around;
+  color: white;
+  width: 100vw;
+  padding-left: 00vw;
+  /* Keep the bar visible at top but in the document flow so expanded
+     mobile menu can push content down instead of overlapping it. */
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: rgba(22, 48, 77, 0.8);
+  backdrop-filter: blur(10px);          /* the blur effect */
+  -webkit-backdrop-filter: blur(10px); 
+  padding-top: env(safe-area-inset-top, 0px);
+  z-index: 1000;
+  margin-bottom: auto;
+}
+
+h1{
+  font-size: 2.2rem;
+  padding: 1rem 0;
+}
+h2{
+  font-size: 1.5rem;
+  margin-top: 2.5rem;
+}

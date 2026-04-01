@@ -2,10 +2,11 @@
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+    background-attachment: fixed;
 }
 
 .content {
     flex: 1 0 auto;
-    padding: 20px;
-    padding-top: 60px; /* Add space for the fixed navbar */
+    padding: 0;
 }

@@ -1,15 +1,18 @@
 import './App.css';
-import Footer from './Footer/Footer.js'
-import Nav from './Nav_Bar/Nav.js'
+import React from 'react';
+import Home from "./Home/Home.js";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Projects from "./Projects/Projects.js";
 
 function App() {
   return (
     <div className="App">
-      <Nav name="Dwij Shah"/>
-      <main className="content">
-        {/* Your main content goes here */}
-      </main>
-      <Footer name="Dwij Shah" github="https://github.com/ReverseToshi" linkedin="https://www.linkedin.com/in/dwij-shah-revert" docker="https://hub.docker.com/u/reversetoshi" leetcode="https://leetcode.com/ReverseToshi"/>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home/>} />
+          <Route path="/projects" element={<Projects/>} />
+        </Routes>
+      </Router>
     </div>
   );
 }

@@ -1,0 +1,33 @@
+#highlights-content {
+    max-width: 1400px;
+    margin: 3rem auto;
+    padding: 0 2rem;
+    color: white;
+}
+
+#highlights-content ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 2.5rem;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+}
+
+#highlights-content li {
+    padding: 0;
+    list-style: none;
+}
+
+@media (max-width: 1120px) {
+    #highlights-content {
+        margin: 2rem auto;
+        padding: 0 1.5rem;
+    }
+
+    #highlights-content ul {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
