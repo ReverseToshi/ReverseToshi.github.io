@@ -52,5 +52,14 @@
         "thumbnail":"./thumbnails/Graph.png",
         "highlight":true,
         "url":"https://github.com/ReverseToshi/Graphing-App"
+    },
+    {
+        "title":"EnergyPay",
+        "description": "An online payment system for energy bills that allows users to pay their bills online, view their payment history, and manage their account information.",
+        "tech":["C#", "ASP.NET", "SQL Server", "HTML", "CSS", "JavaScript"],
+        "type":"Web Application",
+        "thumbnail":"./thumbnails/energypay.png",
+        "highlight":true,
+        "url":"https://github.com/ReverseToshi/EnergyPay"
     }
 ]
