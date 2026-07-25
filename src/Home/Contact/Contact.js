@@ -1,20 +1,61 @@
 import "./Contact.css";
 import React, { useState } from "react";
+import emailjs from "@emailjs/browser";
+
+const EMAIL_SERVICE_ID = process.env.REACT_APP_EMAILJS_SERVICE_ID || "";
+const EMAIL_TEMPLATE_ID = process.env.REACT_APP_EMAILJS_TEMPLATE_ID || "";
+const EMAIL_PUBLIC_KEY = process.env.REACT_APP_EMAILJS_PUBLIC_KEY || "";
 
 function Contact(){
     const [form, setForm] = useState({ name: "", email: "", purpose: "general", message: "" });
+    const [status, setStatus] = useState({ type: "idle", message: "" });
 
     const handleChange = (e) => {
         const { name, value } = e.target;
         setForm((prev) => ({ ...prev, [name]: value }));
+        if (status.type !== "idle") {
+            setStatus({ type: "idle", message: "" });
+        }
     };
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        // Placeholder: wire up to email service or backend later
-        console.log("Contact form submitted:", form);
-        alert("Thanks! I'll get back to you soon.");
-        setForm({ name: "", email: "", purpose: "general", message: "" });
+
+        if (!EMAIL_SERVICE_ID || !EMAIL_TEMPLATE_ID || !EMAIL_PUBLIC_KEY) {
+            setStatus({
+                type: "error",
+                message: "Email is not configured yet. Set the EmailJS keys in your environment to enable sending.",
+            });
+            return;
+        }
+
+        setStatus({ type: "loading", message: "Sending message..." });
+
+        try {
+            await emailjs.send(
+                EMAIL_SERVICE_ID,
+                EMAIL_TEMPLATE_ID,
+                {
+                    from_name: form.name,
+                    from_email: form.email,
+                    purpose: form.purpose,
+                    message: form.message,
+                    to_email: "dwijshah2257@outlook.com",
+                },
+                {
+                    publicKey: EMAIL_PUBLIC_KEY,
+                }
+            );
+
+            setStatus({ type: "success", message: "Message sent. I’ll get back to you soon." });
+            setForm({ name: "", email: "", purpose: "general", message: "" });
+        } catch (error) {
+            console.error("Failed to send contact form email:", error);
+            setStatus({
+                type: "error",
+                message: "Sorry, something went wrong while sending your message. Please try again.",
+            });
+        }
     };
 
     return(
@@ -72,7 +113,14 @@ function Contact(){
                             required
                         />
                     </div>
-                    <button type="submit" className="submit-btn">Send</button>
+                    <button type="submit" className="submit-btn" disabled={status.type === "loading"}>
+                        {status.type === "loading" ? "Sending..." : "Send"}
+                    </button>
+                    {status.message ? (
+                        <p className={`contact-status contact-status--${status.type}`} role="status" aria-live="polite">
+                            {status.message}
+                        </p>
+                    ) : null}
                 </form>
             </div>
         </div>
