@@ -14,12 +14,15 @@ function Skills() {
                             <li><img src="./assets/java.png" alt="Java" /></li>
                             <li><img src="./assets/cpp.svg" alt="C++" /></li>
                             <li><img src="./assets/c-sharp.svg" alt="C#" /></li>
+                            <li><img src="./assets/Typescript.svg" alt="TypeScript" /></li>
                         </ul>
                     </div>
                     <div className="category">
                         <h3>Frameworks & Libraries</h3>
                         <ul>
                             <li><img src="./assets/react.svg" alt="React.js" /></li>
+                            <li><img src="./assets/angular.svg" alt="Angular" /></li>
+                            <li><img src="./assets/asp_net.svg" alt="ASP.NET" /></li>
                             <li><img src="./assets/Spring_Boot.svg" alt="Spring Boot" /></li>
                             <li><img src="./assets/numpy.svg" alt="NumPy" /></li>
                             <li><img src="./assets/pandas.svg" alt="Pandas" /></li>
@@ -33,6 +36,8 @@ function Skills() {
                             <li><img src="./assets/mongodb.svg" alt="MongoDB" /></li>
                             <li><img src="./assets/SQL.svg" alt="SQL" /></li>
                             <li><img src="./assets/sqlite.svg" alt="SQLite" /></li>
+                            <li><img src="./assets/postgre.svg" alt="PostgreSQL" /></li>
+                            <li><img src="./assets/redis.svg" alt="Redis" /></li>
                         </ul>
                     </div>
                     <div className="category">
