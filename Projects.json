@@ -61,5 +61,14 @@
         "thumbnail":"./thumbnails/energypay.png",
         "highlight":true,
         "url":"https://github.com/ReverseToshi/EnergyPay"
+    },
+    {
+    	"title":"Cellular Automata",
+    	"description":"A 2D-simulation of game of life with local agents interacting with local environment with genes to produce emergent patterns",
+    	"tech":["C++", "cmake", "cUDA", "Python", "bash"],
+    	"type":"Simulation",
+    	"thumbnail":"./thumbnails/FYP.png",
+    	"highlight":true,
+    	"url":"https://github.com/ReverseToshi/Cellular-Automata"
     }
 ]
